@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --corRED: rgb(255, 48, 48);
+    --corTitulos: #2c3e50;
+    --corHoverRED: rgb(200, 48, 48);
+    --corTextos: #2c3e50;
+    --corFundoCaixas: lightgray;
+    --corBGSg: forestgreen;
+    --corBGSy: yellow;
+    --corBGSb: blue;
+
+    --borda: 8px;
+}
+
+body {
+    padding: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: var(--corTextos);
+}
+
+h1 {
+ text-align: center;
+ color: var(--corTitulos);
+ font-weight: 800;
+ text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    color: var(--corRED);
+    border-bottom: 3px solid lightgray;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    margin: 25px 0;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    text-wrap: wrap;
+}
+
+section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: justify;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+section img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: var(--borda);
+    border: 2px solid var(--corRED);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border: none;
+}
+
+section p {
+    border-bottom: 1px solid lightgray;
+}
+.botao {
+    background-color: var(--corRED);
+    color: white;
+    padding: 8px;
+    border-radius: var(--borda);
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+
+.botao:active{
+    background-color: var(--corHoverRED);
+}
+.notaRodape {
+    font-size: 11px;
+    color: #7f8c8d;
+    text-align: center;
+    font-style: italic;
+    margin-top: 40px;
+    border-bottom: 1px solid #dcdde1;
+}
+
+.finalIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form {
+    display: block;
+    margin: 20px auto;
+    width: 35%;
+    border-radius: var(--borda);
+    background-color: rgb(231, 231, 231);
+    padding: 8px;
+}
+
+form h2 {
+    border: none;
+    font-size: 30px;
+}
+form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--borda);   
+    border: 1px solid lightgray; 
+    margin-bottom: 5px;
+}

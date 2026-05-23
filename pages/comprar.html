@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprando - BGS</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Finalizar Compra</h1>
-        <h2>Dados do Cliente</h2>
-        <form action="post">
+    <h1 style="text-align: left;">Finalizar Compra</h1>
+    <form action="post">
+            <h2>Dados do Cliente</h2>
             <input type="text" maxlength="50" placeholder="Nome completo" required>
             <input type="email" placeholder="E-mail" required>
             <input type="text" placeholder="Endereço" required>
             <input type="text" placeholder="Número do cartão" required>
             <input type="text" placeholder="Validade" required>
             <input type="text" placeholder="CVV" required>
-            <button> Confirmar Compra </button>
+            <button class="botao"> Confirmar Compra </button>
         </form>
+        <a href="index.html" class="botao">Continuar comprando</a>
 </body>
 </html>
