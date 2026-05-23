@@ -103,6 +103,34 @@ section p {
     background-color: var(--corHoverRED);
 }
 
+.botao img {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+}
+
+.carrinhobtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--corRED);
+    padding: 2px;
+    border-radius: var(--borda);
+    cursor: pointer;
+}
+
+.carrinhobtn:active {
+    background-color: var(--corHoverRED);
+}
+.carrinhobtn img {
+    width: 30px;
+    border: none;
+    position: center;
+}
+
 .notaRodape {
     font-size: 11px;
     color: #7f8c8d;
@@ -141,4 +169,18 @@ form input {
     border-radius: var(--borda);
     border: 1px solid lightgray;
     margin-bottom: 5px;
+}
+
+.carrinho {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: var(--corRED);
+    color: white;
+    padding: 10px;
+    border-radius: var(--borda);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
